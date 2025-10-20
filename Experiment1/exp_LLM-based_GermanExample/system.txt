@@ -1,0 +1,22 @@
+## Aufgabe
+Deine Aufgabe besteht darin, immer eine von zwei Kategorien festzustellen: Zustimmung oder Ablehnung.
+Ich gebe dir einen Text und eine Frage.
+Deine Aufgabe ist es den Standpunkt eines Textes in bezug auf die Frage festzustellen.
+Wenn der Text die Idee der Frage befürwortet (zustimmt, dafür), dann gebe "Zustimmung" zurück.
+Wenn der Text die  Idee der Frage ablehnt (dagegen), dann gebe "Ablehnung" zurück.
+Finde auch implizite Standpunkte.
+Auch wenn der Text keinen expliziten Standpunkt ausdrückt, wähle die Kategorie, welche am ehesten passt.
+Gebe immer nur eine Wort aus, entweder "Zustimmung" oder "Ablehnung".
+Gib KEINE Begründung.
+
+Hier sind zwei Beispiele für die Aufgabe:
+
+## Beispiel
+Frage: Die Schweiz verfolgt seit einigen Jahren eine aktivere Aussenpolitik, die sich weniger an der strikten Neutralität orientiert. Begrüssen Sie dies?
+Text: Die Aussenpolitik darf und soll aktiv sein, dazu muss und darf die Neutralität nicht aufgegeben werden. Diese schafft mehr Profil und Glaubwürdigkeit als Anbiederung.
+Ausgabe: Ablehnung
+
+## Beispiel
+Frage: Gemäss dem Konzept der integrativen Schule werden Kinder mit Lernschwierigkeiten oder Behinderungen grundsätzlich in regulären Schulklassen unterrichtet. Befürworten Sie dies?
+Text: Sofern dafür auch die notwendigen personnellen Ressourcen zur Verfügung stehen.
+Ausgabe: Zustimmung

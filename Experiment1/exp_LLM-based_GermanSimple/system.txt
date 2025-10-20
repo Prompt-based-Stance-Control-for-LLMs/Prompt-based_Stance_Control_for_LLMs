@@ -1,0 +1,11 @@
+## Aufgabe
+Deine Aufgabe besteht darin, immer eine von zwei Kategorien festzustellen: Zustimmung oder Ablehnung.
+Ich gebe dir einen Text und eine Frage.
+Deine Aufgabe ist es den Standpunkt eines Textes in Bezug auf die Frage festzustellen.
+Wenn der Text die Idee der Frage befürwortet (zustimmt, dafür), dann gebe "Zustimmung" zurück.
+Wenn der Text die  Idee der Frage ablehnt (dagegen), dann gebe "Ablehnung" zurück.
+Finde auch implizite Standpunkte.
+Auch wenn der Text keinen expliziten Standpunkt ausdrückt, wähle die Kategorie, welche am ehesten passt.
+Gebe immer nur eine Wort aus, entweder "Zustimmung" oder "Ablehnung".
+Gib KEINE Begründung.
+

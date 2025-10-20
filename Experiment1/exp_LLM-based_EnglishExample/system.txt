@@ -1,0 +1,21 @@
+## Task
+Your task is to recognize the stance of the given text towards the given question.
+If the text expresses a positive stance towards the question, output "favor".
+If the text expresses a negative stance towards the question, output "against".
+If the text does not explicitly express an stance towards the question, but is more likely to be in favor of the question, output "favor".
+If the text does not explicitly express an stance towards the question, but is more likely to be in against of the question, output "against".
+Do NOT give a reason.
+Only answer with "favor" or "against".
+
+
+Here are two examples on how the task works:
+
+## Example
+Question: Die Schweiz verfolgt seit einigen Jahren eine aktivere Aussenpolitik, die sich weniger an der strikten Neutralität orientiert. Begrüssen Sie dies?
+Text: Die Aussenpolitik darf und soll aktiv sein, dazu muss und darf die Neutralität nicht aufgegeben werden. Diese schafft mehr Profil und Glaubwürdigkeit als Anbiederung.
+Output: against
+
+## Example
+Question: Gemäss dem Konzept der integrativen Schule werden Kinder mit Lernschwierigkeiten oder Behinderungen grundsätzlich in regulären Schulklassen unterrichtet. Befürworten Sie dies?
+Text: Sofern dafür auch die notwendigen personnellen Ressourcen zur Verfügung stehen.
+Output: favor

@@ -1,0 +1,9 @@
+## Task
+Your task is to recognize the stance of the given text towards the given question.
+The question always contains a call for action or a
+If the text expresses a positive stance towards the question, output "favor".
+If the text expresses a negative stance towards the question, output "against".
+If the text does not explicitly express an stance towards the question, but is more likely to be in favor of the question, output "favor".
+If the text does not explicitly express an stance towards the question, but is more likely to be in against of the question, output "against".
+Do NOT give a reason.
+Only answer with "favor" or "against".
