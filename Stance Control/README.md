@@ -1,32 +1,32 @@
 # Stance Control
-This part of the repository contains all scripts used to evaluate stance control methods for LLMs.
+This part of the repository contains all the scripts used to evaluate stance control methods for LLMs.
 
-## Files and Repo structure
-This part of the repository is structed as follows:
-The code used to produce the LLM responses, and to evaluate them with stance detection is located in the `code` folder.
+## Files and repo structure
+This part of the repository is structured as follows: 
+The code used to produce and evaluate LLM responses with stance detection is located in the `code` folder.
 
-The folders prefixed with `responses_` contain a txt file with the respective system prompt, used to genreate the controlled responses. Also the generated responses will be stored there as jsonl files.
+Folders prefixed with `responses_` contain a text file with the respective system prompt, used to generate the controlled responses. The generated responses are also stored there as JSONL files.
 
-The `evaluation_labels` folder holds a txt file with the prompt used for stance detection and will hold the evaluation labels (stance labels) for all responses.
+The `evaluation_labels` folder contains a text file with the prompt used for stance detection, as well as the evaluation labels (stance labels) for all responses.
 
-The `code_tables_figures_text` folder holds the code that produced the tables and figures from the paper. Note that this code is not abstracted or generalized and contains local path that we didn't adjusted.
+The `code_tables_figures_text` folder contains the code used to produce the tables and figures in the paper. Please note that this code is not abstracted or generalised.
 
 
 | Path | Description |
 |--|--|
-| code/E_stance_detection.py | Script used to predict the stance labels for a given jsonl file containing the responses. |
-| code/E_stance_detection_PROMPTS.py | Script used to predict the stance labels for the user messages from the UserMessage dataset. |
-| code/M0_....py | Scripts used for data cleaning. One uses an LLM to predict whether the user message is relevant for the topic and what kind of request it is. The other splits the dataset into the cleaned and the removed part. |
-| code/M1_generate_vanilla.py | Feeds the user messages from the specified jonsl file into an uncontrolled LLM |
-| code/M2_generate_controlled.py | Feeds the user messages from the specified jonsl file into an LLM, once with the infavor.txt system prompt and once with the against.txt system prompt located in the working directory that is specified. |
-| code/M3_filter_responses.py | Take a file with LLM responses and filteres paragraphs that do not match the target stance. Uses the specified prompt for stance detection. |
-| ./run_experiment_<model_name>.sh | Script used to perform all experiments for the respective model. See these script for examples on the arguments for all above mentioned scripts |
-| ./topic_descriptions.json | Contains the natural language description of the topics used to fill the prompt templates. Specify this as an argument in the above scripts | 
+| code/E_stance_detection.py | Script used to predict the stance labels for a given JSONL file containing the responses. |
+| code/E_stance_detection_PROMPTS.py | Script used to predict the stance labels for the user messages from the PolPrompts dataset. |
+| code/M0_....py | Scripts used for data cleaning. One script uses an LLM to predict whether a user's message is relevant to the topic and what type of request it is. The other splits the dataset into cleaned and removed parts.|
+| code/M1_generate_vanilla.py | Feeds the user messages from the specified JSONL file into an uncontrolled LLM |
+| code/M2_generate_controlled.py | Feeds the user messages from the specified JSONL file into an LLM, once with the infavor.txt system prompt and once with the against.txt system prompt, both of which are located in the specified working directory.  |
+| code/M3_filter_responses.py | Take a file containing LLM responses and filter out any paragraphs that do not match the target stance. Use the specified prompt for stance detection. |
+| ./run_experiment_<model_name>.sh | Script used to perform all the experiments for each model. See the script for examples of the arguments for all the above-mentioned scripts.  |
+| ./topic_descriptions.json | This contains the natural language descriptions of the topics used to fill the prompt templates. Specify this as an argument in the above scripts. | 
 
 
 ## Usage
 ### Setup
- - Prepare your data such that, `<todo>`
+ - Prepare your data such that it has two fields *topic* and *prompt*. Where *topic* contains a key from the `topic_descriptions.json` file and *prompt* contains a message to which the LLM should respond to.
  - Create a python3.11 virtual environment and install the requirements.txt
  - Setup ollama on your system. See [here](https://github.com/ollama/ollama) for installation process.
  - Befor running the experiments pull all needed LLMs with ollama, eg. `qwen2.5:14b`, `gemma3:4`, `mistral-small`
