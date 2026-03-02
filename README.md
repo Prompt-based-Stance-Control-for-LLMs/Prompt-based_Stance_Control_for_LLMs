@@ -6,12 +6,12 @@ All code used to select the stance detection method, are located in the `Stance 
 All code used to carry out the experiments on prompt-based stance control are located in the `Stance Control` folder.
 There is a separate README.md file in each folder containing more detailed information on the code and experiment reproduction.
 
-The [stance detection](https://github.com/Prompt-based-Stance-Control-for-LLMs/Prompt-based_Stance_Control_for_LLMs/tree/main/Experiment1) experiments comprise
+The [stance detection](https://github.com/Prompt-based-Stance-Control-for-LLMs/Prompt-based_Stance_Control_for_LLMs/tree/main/Stance%20Detection) experiments comprise
  - training of a BERT-based classifier
  - LLM-based classification
  - aggregation/evaluation of the results
 
-The experiments on  [stance control](https://github.com/Prompt-based-Stance-Control-for-LLMs/Prompt-based_Stance_Control_for_LLMs/tree/main/Experiment2) methods comprise
+The experiments on  [stance control](https://github.com/Prompt-based-Stance-Control-for-LLMs/Prompt-based_Stance_Control_for_LLMs/tree/main/Stance%20Control) methods comprise
  - Generating responses with (controlled) LLMs
  - Detecting the stance of the responses
  - Aggregation/Evaluation of the results
