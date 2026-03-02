@@ -1,5 +1,5 @@
-# Prompt-based stance control for LLMs
-This repository contains all the scripts used in the paper *Prompt-based stance control for LLMs*, published at the `<TODO>`.
+# Prompt-Based Stance Control in German: An Evaluation of LLMs for Experimental Research on Attitude Change
+This repository contains all the scripts used in the paper *Prompt-Based Stance Control in German: An Evaluation of LLMs for Experimental Research on Attitude Change*, published at the `<TODO>`.
 
 # Usage
 All scripts used to carry out the selection of stance detection method, are located in the `Stance Detection` folder.
