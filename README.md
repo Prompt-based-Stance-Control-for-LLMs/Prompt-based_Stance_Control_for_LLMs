@@ -4,6 +4,7 @@ This repository contains all the scripts used in the paper *Prompt-Based Stance 
 # Usage
 All code used to select the stance detection method, are located in the `Stance Detection` folder.
 All code used to carry out the experiments on prompt-based stance control are located in the `Stance Control` folder.
+
 There is a separate README.md file in each folder containing more detailed information on the code and usage.
 
 The [stance detection](https://github.com/Prompt-based-Stance-Control-for-LLMs/Prompt-based_Stance_Control_for_LLMs/tree/main/Stance%20Detection) experiments comprise
